@@ -31,19 +31,19 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>╭──《🌐 Bᴏᴛ Sᴛᴀᴛɪsᴛɪᴄs 🌐》</b>\n' \
+    stats = f'<b>╭──《Sagiri Mirror Stats》</b>\n' \
             f'<b>│</b>\n' \
             f'<b>├  ▶ Rᴜɴɴɪɴɢ Sɪɴᴄᴇ ▶ : {currentTime}</b>\n' \
-            f'<b>├  💾 Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ : {total}</b>\n' \
-            f'<b>├  📀 Tᴏᴛᴀʟ Usᴇᴅ Sᴘᴀᴄᴇ : {used}</b>\n' \
-            f'<b>├  💿 Tᴏᴛᴀʟ Fʀᴇᴇ Sᴘᴀᴄᴇ : {free}</b>\n' \
-            f'<b>├  🔼 Tᴏᴛᴀʟ Uᴘʟᴏᴀᴅ : {sent}</b>\n' \
-            f'<b>├  🔽 Tᴏᴛᴀʟ Dᴏᴡɴʟᴏᴀᴅ : {recv}</b>\n' \
-            f'<b>├  🖥️ Cᴘᴜ : {cpuUsage}%</b>\n' \
-            f'<b>├  🎮 Rᴀᴍ : {memory}%</b>\n' \
-            f'<b>├  💽 Dɪsᴋ : {disk}%</b>\n' \
+            f'<b>├  • Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ : {total}</b>\n' \
+            f'<b>├  • Tᴏᴛᴀʟ Usᴇᴅ Sᴘᴀᴄᴇ : {used}</b>\n' \
+            f'<b>├  • Tᴏᴛᴀʟ Fʀᴇᴇ Sᴘᴀᴄᴇ : {free}</b>\n' \
+            f'<b>├  • Tᴏᴛᴀʟ Uᴘʟᴏᴀᴅ : {sent}</b>\n' \
+            f'<b>├  • Tᴏᴛᴀʟ Dᴏᴡɴʟᴏᴀᴅ : {recv}</b>\n' \
+            f'<b>├  • Cᴘᴜ : {cpuUsage}%</b>\n' \
+            f'<b>├  • Rᴀᴍ : {memory}%</b>\n' \
+            f'<b>├  • Dɪsᴋ : {disk}%</b>\n' \
             f'<b>│</b>\n' \
-            f'<b>╰──《 ☣️ @SparkXcloud ☣️ 》</b>'
+            f'<b>╰──《 @Pesinger 》</b>'
     update.effective_message.reply_photo(IMAGE_URL, stats, parse_mode=ParseMode.HTML)
 
 
