@@ -31,7 +31,7 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>╭──《Sagiri Mirror Stats》</b>\n' \
+    stats = f'<b>╭──《 Sagiri Mirror Stats 》</b>\n' \
             f'<b>│</b>\n' \
             f'<b>├  ▶ Rᴜɴɴɪɴɢ Sɪɴᴄᴇ ▶ : {currentTime}</b>\n' \
             f'<b>├  • Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ : {total}</b>\n' \
