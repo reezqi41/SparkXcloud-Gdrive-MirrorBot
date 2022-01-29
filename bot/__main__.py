@@ -31,7 +31,7 @@ def stats(update, context):
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
-    stats = f'<b>╭──《 Sagiri Mirror Stats 》</b>\n' \
+    stats = f'<b>╭──《 Tohka Mirror Stats 》</b>\n' \
             f'<b>│</b>\n' \
             f'<b>├  ▶ Rᴜɴɴɪɴɢ Sɪɴᴄᴇ ▶ : {currentTime}</b>\n' \
             f'<b>├  • Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ : {total}</b>\n' \
@@ -43,7 +43,7 @@ def stats(update, context):
             f'<b>├  • Rᴀᴍ : {memory}%</b>\n' \
             f'<b>├  • Dɪsᴋ : {disk}%</b>\n' \
             f'<b>│</b>\n' \
-            f'<b>╰──《 @Pesinger 》</b>'
+            f'<b>╰──《 @RasyidAlKautsar 》</b>'
     update.effective_message.reply_photo(IMAGE_URL, stats, parse_mode=ParseMode.HTML)
 
 
